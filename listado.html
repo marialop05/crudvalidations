@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado</title>
+    <link rel="stylesheet" href="./css/listado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h2>LISTADO</h2>
+        <ul class="responsive-table">
+          <li class="table-header">
+            <div class="col col-1">ID</div>
+            <div class="col col-2">Nombre</div>
+            <div class="col col-3">Amount Due</div>
+            <div class="col col-4">Payment Status</div>
+            <div class="col col-5" data-label="Options">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="ID">1</div>
+            <div class="col col-2" data-label="Nombre">María López</div>
+            <div class="col col-3" data-label="Amount">$350</div>
+            <div class="col col-4" data-label="Payment Status">Pending</div>
+            <div class="col col-5" data-label="Options">
+                <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                <i onclick="deleteTeacher()" class="fa fa-trash" aria-hidden="true"></i>
+            </div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="ID">2</div>
+            <div class="col col-2" data-label="Nombre">Alejandro García</div>
+            <div class="col col-3" data-label="Amount">$220</div>
+            <div class="col col-4" data-label="Payment Status">Pending</div>
+            <div class="col col-5" data-label="Options">
+                <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                <i onclick="deleteTeacher()" class="fa fa-trash" aria-hidden="true"></i>
+            </div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="ID">3</div>
+            <div class="col col-2" data-label="Nombre">Felisa Pérez</div>
+            <div class="col col-3" data-label="Amount">$341</div>
+            <div class="col col-4" data-label="Payment Status">Pending</div>
+            <div class="col col-5" data-label="Options">
+                <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                <i onclick="deleteTeacher()" class="fa fa-trash" aria-hidden="true"></i>
+            </div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="ID">4</div>
+            <div class="col col-2" data-label="Nombre">Ivan Ruzainik</div>
+            <div class="col col-3" data-label="Amount">$115</div>
+            <div class="col col-4" data-label="Payment Status">Pending</div>
+            <div class="col col-5" data-label="Options">
+                <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                <i onclick="deleteTeacher()" class="fa fa-trash" aria-hidden="true"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    <!------------ JAVASCRIPT ------------>
+    <script src="./js/listado.js"></script>
+</body>
+</html>
